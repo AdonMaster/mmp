@@ -1,6 +1,5 @@
 import {
     Alert,
-    Button,
     Keyboard,
     KeyboardAvoidingView,
     Platform,
@@ -13,8 +12,7 @@ import {
 import {Image} from "expo-image"
 import {useRef, useState} from "react"
 import {clsx} from 'clsx'
-import {Feather, FontAwesome6} from "@expo/vector-icons"
-
+import {Feather} from "@expo/vector-icons"
 
 
 export default function Index() {
@@ -134,6 +132,7 @@ export default function Index() {
                     submitBehavior={'submit'}
                     value={password}
                     onChangeText={setPassword}
+                    onSubmitEditing={Keyboard.dismiss}
                 />
 
                 <Pressable
