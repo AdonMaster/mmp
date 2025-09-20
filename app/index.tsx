@@ -27,7 +27,7 @@ export default function Index() {
             Alert.alert("Error", "Please fill in both fields");
             return;
         }
-        Alert.alert("Login", `Email: ${email}\nPassword: ${password}`);
+        Alert.alert("Error", "Server error 3413421[2]");
     };
 
     return (
